@@ -1,13 +1,14 @@
 class Config {
-    public vacationsUrl = "http://localhost:3001/api/vacations/";
-    public vacationsUsersUrl = "http://localhost:3001/api/vacations-users/";
-    public followersUrl = "http://localhost:3001/api/followers/";
-    public registerUrl = "http://localhost:3001/api/auth/register/";
-    public loginUrl = "http://localhost:3001/api/auth/login/";
-    public vacationsImageUrl = "http://localhost:3001/api/vacations/images/";
-    public usersUrl = "http://localhost:3001/api/users/";
-    public editVacationUrl = "http://localhost:3001/api/vacations/edit/";
+    public vacationsUrl = "https://easy-travel-backend-z.onrender.com/api/vacations/";
+    public vacationsUsersUrl = "https://easy-travel-backend-z.onrender.com/api/vacations-users/";
+    public followersUrl = "https://easy-travel-backend-z.onrender.com/api/followers/";
+    public registerUrl = "https://easy-travel-backend-z.onrender.com/api/auth/register/";
+    public loginUrl = "https://easy-travel-backend-z.onrender.com/api/auth/login/";
+    public vacationsImageUrl = "https://easy-travel-backend-z.onrender.com/api/vacations/images/";
+    public usersUrl = "https://easy-travel-backend-z.onrender.com/api/users/";
+    public editVacationUrl = "https://easy-travel-backend-z.onrender.com/api/vacations/edit/";
 }
+
 
 const appConfig = new Config(); // Singleton
 
