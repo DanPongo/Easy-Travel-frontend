@@ -1,0 +1,20 @@
+.AuthMenu {
+    position: relative;
+    margin-right: 0px;
+    color: rgb(20, 4, 70);
+}
+
+.AuthMenu>a {
+    font-size: large;
+    color: rgb(16, 3, 81);
+    margin: 15px;   
+}
+
+.AuthMenu>a:hover {
+    color: rgb(14, 136, 155);
+    font-weight: bold;
+}
+
+.AuthMenu>.active {
+    color: rgb(4, 56, 55);
+}

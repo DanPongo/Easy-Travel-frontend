@@ -1,0 +1,152 @@
+.AddVacation:hover {
+    box-shadow: 2px 2px 14px 8px rgba(13, 4, 95, 0.518);
+    transition: all 0.8s;
+}
+
+.AddVacation {
+    color: rgb(11, 38, 174);
+    font-size: 16px;
+    font-family: Segoe UI Variable Small Light;
+    font-weight: 500;
+    display: inline-block;
+    box-shadow: 2px 2px 14px 8px rgba(9, 119, 159, 0.524);
+    margin: 80px;
+    padding: 23px;
+    border-radius: 10px;
+    align-items: center;
+    backdrop-filter: blur(25px);
+    transition: all 0.8s;
+}
+
+.AddVacation>form>h2 {
+    color: rgb(16, 35, 129);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.AddVacation>form {
+    text-align: left;
+    width: 250px;
+}
+
+.AddVacation>form>input,
+.AddVacation>form>textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-family: Segoe UI Variable Small Light;
+    resize: none;
+}
+.AddVacation>form>textarea::-webkit-scrollbar {
+    width: 14px;
+    transition: all .3s;
+}
+
+.AddVacation>form>textarea::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(15, 5, 77, 0.781);
+    border-radius:25px;
+}
+
+.AddVacation>form>textarea::-webkit-scrollbar-thumb {
+    background: linear-gradient(15deg, #081d85bd, #0a5e8b, #163392);
+    border-radius:25px;
+}
+
+.AddVacation>form>textarea::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(-15deg,  #081d85bd, #0a5e8b, #163392);
+}
+
+.Input {
+    font-size: 16px;
+    line-height: 35px;
+    border: 2px solid transparent;
+    border-bottom-color: rgb(3, 5, 96);
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: rgb(5, 29, 113);
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.Input:focus,
+input:hover,
+.AddVacation>form>textarea:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: rgb(24, 9, 100);
+}
+
+.Input::placeholder {
+    color: rgb(14, 87, 147);
+}
+
+.Input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.AddVacation img {
+    float: right;
+    width: 100px;
+    height: 70px;
+    margin-top: -8px;
+    margin-bottom: 18px;
+    margin-right: 29.5%;
+    border: #19b5e4 2px solid;
+}
+
+.AddVacation>form>input>#file {
+    cursor: pointer;
+}
+
+.AddVacation>form>button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 0.6em;
+    width: 60px;
+    height: 60px;
+    margin-left: 25%;
+    border: 3px solid #1a2bdd;
+    border-radius: 50%;
+    position: relative;
+    color: #208e94;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.AddVacation>form>button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #163b99;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.AddVacation>form>button:hover,
+.AddVacation>form>button:focus {
+    color: rgb(38, 140, 158);
+}
+
+.AddVacation>form>button:hover:before,
+.AddVacation>form>button:focus:before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.AddVacation>form>button:active {
+    transform: scale(0.9);
+}

@@ -1,0 +1,12 @@
+.PageNotFound>p {
+    color: rgb(11, 39, 134);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 80px;
+}
+
+.PageNotFound>iframe {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 14px 8px rgba(6, 18, 121, 0.524);
+}

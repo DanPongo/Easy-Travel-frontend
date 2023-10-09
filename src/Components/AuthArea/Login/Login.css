@@ -1,0 +1,130 @@
+.Login:hover {
+    box-shadow: 2px 2px 14px 8px rgba(0, 0, 255, 0.518); /* More blue */
+    transition: all 0.8s;
+}
+
+.Login {
+    display: inline-block;
+    box-shadow: 2px 2px 14px 8px rgba(0, 0, 128, 0.524); /* More blue */
+    border-radius: 10px;
+    align-items: center;
+    color: rgb(0, 0, 255); /* More blue */
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 80px;
+    padding: 15px;
+    backdrop-filter: blur(22px);
+    transition: all 0.8s;
+}
+
+.Login>form {
+    text-align: left;
+    width: 250px;
+}
+
+.Login>form>input {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.Login>form>.input {
+    font-size: 16px;
+    line-height: 35px;
+    border: 2px solid transparent;
+    border-bottom-color: rgb(0, 0, 255); /* More blue */
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 255); /* More blue */
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.Login>form>.input:focus,
+.Login>form>input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #000080; /* Navy */
+}
+
+.Login>form>.input::placeholder {
+    color: rgb(0, 0, 255); /* More blue */
+}
+
+.Login>form>.input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.Login>form>button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* To center the text */
+    text-align: center;
+    font-weight: bold;
+    padding: 0.6em 0.6em; /* Adjust padding to make it square */
+    margin-left: 21.7%;
+    border: 3px solid #000080; /* Navy */
+    border-radius: 50%; /* Makes the button round */
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #000080; /* Navy */
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    min-width: 60px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+}
+
+/* Adjusting before pseudo-element */
+.Login>form>button:before {
+    border-radius: 50%; /* Makes the before element round */
+    /* Other properties remain the same */
+}
+
+
+.Login>form>button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #000080; /* Navy */
+    z-index: -1;
+}
+
+.Login>form>button:hover,
+.Login>form>button:focus {
+    color: rgb(255, 255, 255);
+}
+
+.Login>form>button:hover:before,
+.Login>form>button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.Login>form>button:active {
+    transform: scale(0.9);
+}
+
+.Login>form>a {
+    margin-left: 9.8%;
+    color: #000080; /* Navy */
+    font-size: 14.5px;
+    font-weight: 500;
+}
+
+.Login>form>a:hover {
+    color: #0000FF; /* Blue */
+}

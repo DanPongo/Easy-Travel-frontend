@@ -1,0 +1,132 @@
+.Register {
+    display: inline-block;
+    box-shadow: 2px 2px 14px 8px rgba(0, 0, 77, 0.524);
+    border-radius: 10px;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 80px;
+    padding: 15px;
+    backdrop-filter: blur(22px);
+    transition: all 0.8s;
+    background-color: rgba(0, 0, 139, 0.2);
+}
+
+.Register:hover {
+    box-shadow: 2px 2px 14px 8px rgba(0, 0, 139, 0.518);
+    transition: all 0.8s;
+}
+
+.Register>form {
+    text-align: left;
+    width: 250px;
+    color: rgb(238, 242, 243);
+}
+
+.Register>form>input {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.Register>form>.input {
+    font-size: 16px;
+    line-height: 35px;
+    border: 2px solid transparent;
+    border-bottom-color: deepskyblue;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: rgb(238, 244, 247);
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.Register>form>.input:focus,
+.Register>form>input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: dodgerblue;
+}
+
+.Register>form>.input::placeholder {
+    color: white; /* Changed placeholder color to white */
+    opacity: 1; 
+}
+
+/* For Internet Explorer 10-11 */
+:-ms-input-placeholder {
+   color: white;
+}
+
+/* For Microsoft Edge */
+::-ms-input-placeholder {
+   color: white;
+}
+
+.Register>form>.input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.Register>form>button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.6em 2em;
+    margin-left: 13%;
+    border: 3px solid dodgerblue;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 139, 0.16), 0 3px 6px rgba(0, 0, 139, 0.1);
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.Register>form>button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: dodgerblue;
+    z-index: -1;
+}
+
+.Register>form>button:hover,
+.Register>form>button:focus {
+    color: white;
+}
+
+.Register>form>button:hover:before,
+.Register>form>button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.Register>form>button:active {
+    transform: scale(0.9);
+}
+
+.Register>form>a {
+    margin-left: 7%;
+    color: rgb(228, 234, 236);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.Register>form>a:hover {
+    color: rgb(0, 0, 255);
+}

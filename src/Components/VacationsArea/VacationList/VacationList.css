@@ -1,0 +1,148 @@
+.VacationList>.ContainerUser {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 40px;
+    margin-top: 13px;
+    flex-wrap: wrap;
+}
+
+
+.VacationsList>.Pagination {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: medium;
+    gap: 20px;
+}
+
+.Pagination {
+    margin-bottom: 17px;
+}
+
+.Pagination>button {
+    color: black;
+    width: 130px;
+    height: 30px;
+    align-items: center;
+    border: none;
+    border-radius: 25px;
+    background-color: #369ecf;
+    color: #060707;
+    font-size: 1.0rem;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.Pagination>span {
+    margin-top: 15px;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(224, 231, 235);
+}
+
+.VacationList>.ContainerAdmin {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+
+
+.FollowedVacations {
+    position: relative;
+    top: 21px;
+    font-size: 30px;
+    color: #08055b;
+    font-weight: bold;
+}
+
+.ContainerBox2 {
+    margin-top: 0px;
+    margin-left: 280px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px rgb(183, 183, 183);
+}
+
+.ContainerBox2>input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    border-radius: 5px;
+}
+
+.CheckmarkFollowed {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    height: 1.3em;
+    width: 1.3em;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.ContainerBox2>input:checked~.CheckmarkFollowed {
+    box-shadow: 3px 3px 3px rgba(85, 77, 49, 0.405);
+    transition: all 0.2s;
+    opacity: 1;
+    top: -25px;
+    background-image: linear-gradient(45deg, #9f7f4b 0%, wheat 100%);
+}
+
+.ContainerBox2>input~.CheckmarkFollowed {
+    transition: all 0.2s;
+    opacity: 1;
+    top: -25px;
+    box-shadow: 3px 3px 3px rgba(85, 77, 49, 0.405);
+}
+
+.CheckmarkFollowed:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.ContainerBox2>input:checked~.CheckmarkFollowed:after {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.ContainerBox2>.CheckmarkFollowed:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+}
+
+.FutureVacations {
+    font-size: 30px;
+    color: #08055b;
+    font-weight: bold;
+
+}
+.CurrentVacations {
+    font-size: 24px;
+    color: #08055b;
+    font-weight: bold;
+
+}
+.choose {
+    font-size: 24px;
+    color: #08055b;
+    font-weight: bold;
+
+}
