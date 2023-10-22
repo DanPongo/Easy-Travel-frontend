@@ -2,7 +2,6 @@
 ```markdown
 # Vacation Booking Application
 
-![Screenshot 2023-10-22 191150](https://github.com/DanPongo/Easy-Travel-frontend/assets/106473315/53a8418f-439d-43b8-aeba-d5a065ea5d52)
 
 Welcome to the Vacation Booking Application repository! This application allows users to book vacations, follow their favorite destinations, filter vacations, and includes both user and admin sides. Users can also register on the website to access additional features.
 
