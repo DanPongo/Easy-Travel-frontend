@@ -2,7 +2,9 @@
 ```markdown
 # Vacation Booking Application
 
-Welcome to the Vacation Booking Application repository! This application allows users to book vacations, follow their favorite destinations, filter vacations, and includes both user and admin sides. Users can also register on the website to access additional features.
+Welcome to the Vacation Booking Application repository! This application allows users to book vacations,
+follow their favorite destinations, filter vacations, and includes both user and admin sides.
+Users can also register on the website to access additional features.
 
 ## Table of Contents
 
