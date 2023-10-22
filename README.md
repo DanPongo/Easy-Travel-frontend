@@ -1,9 +1,8 @@
-Certainly! Here's the text you provided inserted into the README file format:
 
 ```markdown
 # Vacation Booking Application
 
-![Application Screenshot](screenshot.png)
+![Screenshot 2023-10-22 191150](https://github.com/DanPongo/Easy-Travel-frontend/assets/106473315/53a8418f-439d-43b8-aeba-d5a065ea5d52)
 
 Welcome to the Vacation Booking Application repository! This application allows users to book vacations, follow their favorite destinations, filter vacations, and includes both user and admin sides. Users can also register on the website to access additional features.
 
@@ -13,6 +12,7 @@ Welcome to the Vacation Booking Application repository! This application allows 
 - [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Code Examples](#code-examples)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -72,6 +72,58 @@ To run the application locally, follow these steps:
 
 5. **Share via WhatsApp**: Users can share vacation information with friends via WhatsApp.
 
+## Code Examples
+
+Here are some code examples from the application:
+
+### Download CSV Function
+
+```javascript
+const downloadCSV = () => {
+    // Your downloadCSV function code here
+    // Example code...
+    if (downloadRef.current) {
+        const header = 'Vacations, Likes\n';
+        const data = vacations.map(v => `${v.destination}, ${v.followersAmount}`).join('\n');
+        const csvData = header + data;
+        const blob = new Blob([csvData], { type: 'text/csv' });
+        const url = URL.createObjectURL(blob);
+        (downloadRef.current as HTMLAnchorElement).setAttribute('href', url);
+        (downloadRef.current as HTMLAnchorElement).setAttribute('download', 'vacations.csv');
+        (downloadRef.current as HTMLAnchorElement).click();
+    } else {
+        console.error("downloadRef is not defined");
+    }
+}
+```
+
+### Follow/Unfollow Function
+
+```javascript
+async function isFollow() {
+    try {
+        const vacationId = props.vacation.vacationId;
+        const userId = await authService.getUserIdFromToken();
+
+        const follower = new FollowerModel();
+        follower.vacationId = vacationId;
+        follower.userId = userId;
+
+        if (isFollowing) {
+            setIsFollowing(false);
+            setFollowers(followers - 1);
+            await followersService.deleteFollower(follower);
+        } else {
+            setIsFollowing(true);
+            setFollowers(followers + 1);
+            await followersService.addFollower(follower);
+        }
+    } catch (error) {
+        console.error(error);
+    }
+}
+```
+
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
@@ -105,4 +157,4 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 This project is licensed under the MIT License.
 ```
 
-You can use this text as your README.md file on GitHub.
+You can use this updated text with code examples as your README.md file on GitHub.
