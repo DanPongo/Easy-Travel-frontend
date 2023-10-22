@@ -2,13 +2,13 @@
 ```markdown
 # Vacation Booking Application
 
+![vacation](https://github.com/DanPongo/Easy-Travel-frontend/assets/106473315/35990875-cceb-44b6-955f-5f8525fd6ae3)
 
 Welcome to the Vacation Booking Application repository! This application allows users to book vacations, follow their favorite destinations, filter vacations, and includes both user and admin sides. Users can also register on the website to access additional features.
 
 ## Table of Contents
 
 - [Features](#features)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Code Examples](#code-examples)
@@ -23,9 +23,6 @@ Welcome to the Vacation Booking Application repository! This application allows 
 - User registration and authentication.
 - Admin panel for managing reports and vacations.
 
-## Demo
-
-You can check out a live demo of the application [here](https://your-demo-url.com).
 
 ## Installation
 
